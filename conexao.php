@@ -1,8 +1,10 @@
 <?php
-define('HOST', 'localhost/loginBasicoPhp/loginEmPhP');
+define("HOST", "localhost");
 define('USUARIO', 'root');
-define('SENHA','1234');
+define('SENHA','');
 define('DB','login');
-$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die;
+
+$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possivel conectar');
+
 
 ?>
